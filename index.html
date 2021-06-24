@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Boootstrap Portfolio/Resume Theme for Developers</title>
+    <title>JungAh Choi :: Portfolio</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,11 @@
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href="favicon.ico">  
     
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!--font-family-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet" type="text/css">
     
     <!-- FontAwesome JS -->
     <script defer src="assets/fontawesome/js/all.js"></script>
@@ -34,9 +37,9 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/" alt="profile image" width="50%" />
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.jpg" alt="profile image" style="width: 200px; height:auto;" />
             <div class="profile-content float-left">
-                <h1 class="name">JungAh Choi</h1>
+                <h1 class="name">최정아</h1>
                 <h2 class="desc">Web Developer</h2>   
                 <ul class="social list-inline">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -46,7 +49,7 @@
                     <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
                 </ul>
             </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+            <a class="btn btn-cta-primary float-right" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i>Contact Me</a>              
         </div><!--//container-->
     </header><!--//header-->
     
@@ -57,7 +60,8 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>꾸준히 노력하고 성장하는 신입 개발자 최정아입니다.</p>
+                            <p>안녕하세요. 꾸준히 노력하고 성장하는 신입 개발자 최정아입니다.</p>
+                            <p>업데이트 중</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -78,33 +82,9 @@
                                     </div>
                                 </div>
                                 
-                                <h3 class="title mb-3"><a href="#" target="_blank">[팀 프로젝트] 헬스장 관리 프로그램</a></h3>
+                                <h3 class="title mb-3"><a href="#" target="_blank">프랜차이즈 헬스장 관리 프로그램</a></h3>
                                 <table class="table text-center">
 									<tbody>
-										<tr>
-											<td width="25%">
-												<b>프로젝트 방식</b>
-											</td>
-											<td width="75%" class="text-left">
-												Spring MVC
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<b>사용 프로그램</b>
-											</td>
-											<td class="text-left">
-												Spring Tool Suite, HeidiSQL, Github
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<b>사용 언어</b>
-											</td>
-											<td class="text-left">
-												Java, HTML, SQL, JavaScript(jQuery)
-											</td>
-										</tr>
 										<tr>
 											<td>
 												<b>작업 기간</b>
@@ -118,6 +98,27 @@
 												<b>프로젝트 설명</b>
 											</td>
 											<td class="text-left">
+												OS : Windows 10 <br>
+												Language : Java(Oracle JDK 1.8), JavaScript, HTML5, CSS3, Bootstrap4 <br>
+												Library : jquery(3.6), Lombok(1.18), mybatis(2.1) <br>
+												Database : Mariadb, HeidiSQL
+												<br>
+												
+											</td>
+										</tr>
+										<tr>
+											<td width="25%">
+												<b>프로젝트 개발 환경</b>
+											</td>
+											<td width="75%" class="text-left">
+												
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<b>프로젝트 서비스 환경</b>
+											</td>
+											<td class="text-left">
 												
 											</td>
 										</tr>
@@ -126,11 +127,13 @@
 												<b>링크</b>
 											</td>
 											<td class="text-left">
-												<button class="btn btn-default" onclick="window.open('#')">Project</button>
+												<button class="btn btn-default" onclick="window.open('http://wjddk718.kro.kr/sakila/')">Project</button>
 												&nbsp;&nbsp;
-												<button class="btn btn-default" onclick="window.open('#')">Github</button>
+												<button class="btn btn-default" onclick="window.open('https://github.com/Jung-Ah-C/sakila/')">GitHub</button>
 												&nbsp;&nbsp;
-												<button class="btn btn-default" onclick="window.open('#')">ERD</button>
+												<button class="btn btn-default" onclick="window.open('assets/images/sakila_erd.png')">ERD</button>
+												&nbsp;&nbsp;
+												<button class="btn btn-default" onclick="window.open('#')">기능 정의서</button> <!-- 구현 끝나면 기능 정의서 업데이트 하기! -->
 											</td>
 										</tr>
 									</tbody>
@@ -150,44 +153,36 @@
                                     </div>
                                 </div>
                                 
-                                <h3 class="title mb-3"><a href="#" target="_blank">[개인 프로젝트] 비디오 대여점</a></h3>
+                                <h3 class="title mb-3"><a href="#" target="_blank">영화 DVD 대여점 관리 프로그램</a></h3>
                                 <table class="table text-center">
 									<tbody>
-										<tr>
-											<td width="25%">
-												<b>프로젝트 방식</b>
-											</td>
-											<td width="75%" class="text-left">
-												Spring MVC
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<b>사용 프로그램</b>
-											</td>
-											<td class="text-left">
-												Spring Tool Suite, HeidiSQL, Github
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<b>사용 언어</b>
-											</td>
-											<td class="text-left">
-												Java, HTML, SQL, JavaScript(jQuery), JDBC, JSTL
-											</td>
-										</tr>
 										<tr>
 											<td>
 												<b>작업 기간</b>
 											</td>
 											<td class="text-left">
-												2021.05.20 ~ 진행중
+												2021.05.20 ~ 2021.06.26 (DB 분석 1주 + 기능 구현 4주)
 											</td>
 										</tr>
 										<tr>
 											<td>
 												<b>프로젝트 설명</b>
+											</td>
+											<td class="text-left">
+												
+											</td>
+										</tr>
+										<tr>
+											<td width="25%">
+												<b>프로젝트 개발 환경</b>
+											</td>
+											<td width="75%" class="text-left">
+												
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<b>프로젝트 서비스 환경</b>
 											</td>
 											<td class="text-left">
 												
@@ -200,9 +195,11 @@
 											<td class="text-left">
 												<button class="btn btn-default" onclick="window.open('http://wjddk718.kro.kr/sakila/')">Project</button>
 												&nbsp;&nbsp;
-												<button class="btn btn-default" onclick="window.open('https://github.com/Jung-Ah-C/sakila/')">Github</button>
+												<button class="btn btn-default" onclick="window.open('https://github.com/Jung-Ah-C/sakila/')">GitHub</button>
 												&nbsp;&nbsp;
-												<button class="btn btn-default" onclick="window.open('#')">ERD</button>
+												<button class="btn btn-default" onclick="window.open('assets/images/sakila_erd.png')">ERD</button>
+												&nbsp;&nbsp;
+												<button class="btn btn-default" onclick="window.open('#')">기능 정의서</button> <!-- 구현 끝나면 기능 정의서 업데이트 하기! -->
 											</td>
 										</tr>
 									</tbody>
@@ -235,61 +232,10 @@
                     </div><!--//section-inner-->                
                 </section><!--//section-->
                 
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Github profile so people can get more info there.</p>
-                            
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; Django<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
                 <section class="experience section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Experience</h2>
                         <div class="content">
-                            <div class="item">
-                                <h3 class="title">Java/Spring 기반 SW개발자 양성과정 수료 - <span class="place"><a href="#">구디아카데미</a></span> <span class="year">(2021.03 - 2021.08)</span></h3>
-                                <p></p>
-                            </div><!--//item-->
                             <div class="item">
                                 <h3 class="title">마케팅 인턴 - <span class="place"><a href="#">Royal Sovereign Inc.</a></span> <span class="year">(2019.08 - 2020.08)</span></h3>
                                 <p></p>
@@ -333,44 +279,68 @@
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
-                                <h4 class="university">University College London <span class="year">(2011-2012)</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> 구디아카데미</h3>
+                                <h4 class="university">자바/스프링 기반 SW개발자 양성과정 수료예정 <br><span class="year">(2021.03 ~ 2021.08)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> 상명대학교</h3>
+                                <h4 class="university">경영학부 졸업 <span class="year">(2016-2021)</span></h4>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
-                                <h4 class="university">University of Bristol <span class="year">(2008-2011)</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> 영등포여자고등학교</h3>
+                                <h4 class="university">인문계 졸업 <span class="year">(2012-2015)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                             
-                <aside class="languages aside section">
+                <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Languages</h2>
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">HTML &amp; CSS</h3>
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                	<h3 class="level-title">Java</h3>
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                	<h3 class="level-title">Spring</h3>
+                                </div><!--//item-->
+                                
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="certificate aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Certificate</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Korean:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Minimum Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
-                                </li><!--//item-->
+                                <li><i class="fas fa-check"></i> TOEIC 900점</li>
+                                <li><i class="fas fa-check"></i> TOEIC SPEAKING Level 7</li>
+                                <li><i class="fas fa-check"></i> 개인정보취급사(CPPF)</li>
+                                <li><i class="fas fa-check"></i> 운전면허 2종 보통</li>
+                                <li><i class="fas fa-check"></i> 정보처리기사 준비중</li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 
-                <aside class="list music aside section">
+                <aside class="hobbies aside section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Favorite coding music</h2>
+                        <h2 class="heading">Hobbies</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
+                                <li><i class="fas fa-running"></i> 운동</li>
+                                <li><i class="fas fa-film"></i> 영화 &amp; 넷플릭스</li>
+                                <li><i class="fas fa-headphones"></i> 음악감상</li>
+                                <li><i class="fas fa-plane"></i> 여행</li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
