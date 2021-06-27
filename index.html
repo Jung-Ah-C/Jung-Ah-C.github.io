@@ -30,7 +30,31 @@
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.css">
+
+<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/github-activity-feed@latest/dist/github-activity.min.js"></script>
+<script>
+  function updateFeed(username) {
+    GitHubActivity.feed({ username: username, selector: '#feed' });
+  }
+
+  $(document).ready(function() {
+    updateFeed('Jung-Ah-C');
+  });
+</script>
+<style>
+
+  #feed {
+    width: 700px;
+    height: 700px;
+    margin: 30px 0;
+  }
+</style>
+
 </head> 
 
 <body>
@@ -40,7 +64,7 @@
             <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/profile.jpg" alt="profile image" style="width: 200px; height:auto;" />
             <div class="profile-content float-left">
                 <h1 class="name">최정아</h1>
-                <h2 class="desc">Web Developer</h2>   
+                <h2 class="desc">신입 개발자</h2>   
                 <ul class="social list-inline">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/jung-ah-choi-729b06196/"><i class="fab fa-linkedin-in"></i></a></li>
@@ -60,7 +84,7 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>안녕하세요. 꾸준히 노력하고 성장하는 신입 개발자 최정아입니다.</p>
+                            <p>안녕하세요. 코드로 더 나은 세상을 구현하는 개발자, 최정아입니다.</p>
                             <p>업데이트 중</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
@@ -82,7 +106,7 @@
                                     </div>
                                 </div>
                                 
-                                <h3 class="title mb-3"><a href="#" target="_blank">프랜차이즈 헬스장 관리 프로그램</a></h3>
+                                <h3 class="title mb-3"><a href="#" target="_blank">프랜차이즈 헬스장 고객관리 프로그램</a></h3>
                                 <table class="table text-center">
 									<tbody>
 										<tr>
@@ -90,7 +114,7 @@
 												<b>작업 기간</b>
 											</td>
 											<td class="text-left">
-												2021.06.09 ~ 진행중
+												2021.06 ~ 진행중
 											</td>
 										</tr>
 										<tr>
@@ -98,12 +122,7 @@
 												<b>프로젝트 설명</b>
 											</td>
 											<td class="text-left">
-												OS : Windows 10 <br>
-												Language : Java(Oracle JDK 1.8), JavaScript, HTML5, CSS3, Bootstrap4 <br>
-												Library : jquery(3.6), Lombok(1.18), mybatis(2.1) <br>
-												Database : Mariadb, HeidiSQL
-												<br>
-												
+												팀 회의를 통해서 현재 DB 논리설계를 진행 중에 있습니다.
 											</td>
 										</tr>
 										<tr>
@@ -111,7 +130,11 @@
 												<b>프로젝트 개발 환경</b>
 											</td>
 											<td width="75%" class="text-left">
-												
+												OS : Windows 10 <br>
+												Language : Java(Open JDK 1.8), JavaScript, HTML5, CSS3, Bootstrap4 <br>
+												Library : Spring Boot (2.4.5), jQuery(3.6), lombok(1.18), MyBatis(2.1), JSTL(1.2), Tomcat(9.0), AJAX, Servlet(4.0), JSP(2.3) <br>
+												Database : MariaDB(10.5), HeidiSQL <br>
+												IDE : STS(4.10)
 											</td>
 										</tr>
 										<tr>
@@ -119,7 +142,9 @@
 												<b>프로젝트 서비스 환경</b>
 											</td>
 											<td class="text-left">
-												
+												Platform : AWS Lightsail <br>
+												OS : Ubuntu 16.04 <br>
+												실행환경 : 구글 Chrome 브라우저에 최적화
 											</td>
 										</tr>
 										<tr>
@@ -161,7 +186,7 @@
 												<b>작업 기간</b>
 											</td>
 											<td class="text-left">
-												2021.05.20 ~ 2021.06.26 (DB 분석 1주 + 기능 구현 4주)
+												2021.05 ~ 2021.06 (DB 분석 1주 + 기능 구현 4주)
 											</td>
 										</tr>
 										<tr>
@@ -169,7 +194,8 @@
 												<b>프로젝트 설명</b>
 											</td>
 											<td class="text-left">
-												
+												MySQL에서 제공하는 sakila 샘플 데이터 베이스를 분석하여, DVD 대여점 관리 프로그램을 만들었습니다. <br>
+												직원/고객/영화/재고 관리를 위한 CRUD 기능, 검색 기능, 외부 라이브러리를 활용한 매출 그래프 등을 구현했습니다.
 											</td>
 										</tr>
 										<tr>
@@ -177,7 +203,11 @@
 												<b>프로젝트 개발 환경</b>
 											</td>
 											<td width="75%" class="text-left">
-												
+												OS : Windows 10 <br>
+												Language : Java(Open JDK 1.8), JavaScript, HTML5, CSS3, Bootstrap4 <br>
+												Library : Spring Boot (2.4.5), jQuery(3.6), lombok(1.18), MyBatis(2.1), JSTL(1.2), Tomcat(9.0), AJAX, Servlet(4.0), JSP(2.3) <br>
+												Database : MariaDB(10.5), HeidiSQL <br>
+												IDE : STS(4.10)
 											</td>
 										</tr>
 										<tr>
@@ -185,7 +215,9 @@
 												<b>프로젝트 서비스 환경</b>
 											</td>
 											<td class="text-left">
-												
+												Platform : AWS Lightsail <br>
+												OS : Ubuntu 16.04 <br>
+												실행환경 : 구글 Chrome 브라우저에 최적화
 											</td>
 										</tr>
 										<tr>
@@ -237,8 +269,19 @@
                         <h2 class="heading">Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">마케팅 인턴 - <span class="place"><a href="#">Royal Sovereign Inc.</a></span> <span class="year">(2019.08 - 2020.08)</span></h3>
-                                <p></p>
+                                <h3 class="title">마케팅 인턴 - <span class="place"><a href="https://www.royalsovereign.com/">Royal Sovereign Inc.</a></span> <span class="year">(2019.08 - 2020.08)</span></h3>
+                                <p>
+                                	미국 뉴저지에서 1년 동안 마케팅 인턴으로 Amazon과 Walmart e-commerce 파트를 담당하여 근무했습니다. <br>
+                                	일일 판매 실적을 엑셀로 정리하며 반복되는 업무의 효율성을 고민하게 되면서 프로그래밍을 접하게 되었습니다.
+                                </p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">필리핀 어학연수 - <span class="place">Bulacan State University</span><span class="year">(2017.12 - 2018.01)</span></h3>
+                                <p>
+                                	필리핀 불라칸 주립 대학교 어학당에서 1달 동안 기초 영어회화를 공부했습니다. <br>
+                                	직접 영어로 대화하면서 영어에 대한 자신감과 흥미를 얻을 수 있는 좋은 시간이었습니다.
+                                </p>
                             </div><!--//item-->
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -246,17 +289,16 @@
                 <section class="github section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
-                        
-                        <div id="github-graph" class="github-graph">
+                       
+                        <p><a href="https://github.com/Jung-Ah-C/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
 
-                        </div><!--//github-graph-->
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
+                        <div id="feed" class="feed">
+                        </div>
 
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
                         <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-                        
+                        <div id="feed" class="ghfeed"></div>
+
                     </div><!--//secton-inner-->
                 </section><!--//section-->
             </div><!--//primary-->
@@ -268,7 +310,7 @@
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Seoul, Republic of Korea</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">wjddk718@naver.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://jung-ah-c.github.io</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://jung-ah-c.github.io">https://jung-ah-c.github.io</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
