@@ -53,6 +53,17 @@
     height: 700px;
     margin: 30px 0;
   }
+  
+  #ul {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  #img {
+  text-align: center;	
+  }
+
 </style>
 
 </head> 
@@ -61,17 +72,17 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
-            <img class="profile-image img-fluid float-center rounded-circle" src="assets/images/profile.jpg" alt="profile image" style="width: 200px; height:auto;" />
+            <div id="img"><img class="profile-image float-center rounded-circle" src="assets/images/profile.jpg" alt="profile image" style="width: 200px; height:auto;" /></div>
             <div class="profile-content float-center">
-                <h1 class="name">최정아 (JungAh Choi)</h1>
-                <h2 class="desc">신입 웹 개발자</h2>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span> Seoul, Republic of Korea</li>
-                    <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span> wjddk718@naver.com</li>
-                    <li class="list-inline-item"><i class="fab fa-github-alt"></i><a href="https://github.com/Jung-Ah-C"> https://github.com/Jung-Ah-C</a></li>
-                    <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://jung-ah-c.github.io"> https://jung-ah-c.github.io</a></li>
-                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/jung-ah-choi-729b06196/"> https://www.linkedin.com/in/jung-ah-choi-729b06196/</a></li>  
-                </ul>
+                <h1 class="name" align="center">최정아 (JungAh Choi)</h1>
+                <h2 class="desc" align="center">신입 웹 개발자</h2>
+	                <ul id="ul" class="list-unstyled">
+	                    <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span> Seoul, Republic of Korea</li>
+	                    <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span> wjddk718@naver.com</li>
+	                    <li class="list-inline-item"><i class="fab fa-github-alt"></i><a href="https://github.com/Jung-Ah-C"> https://github.com/Jung-Ah-C</a></li>
+	                    <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://jung-ah-c.github.io"> https://jung-ah-c.github.io</a></li>
+	                    <li class="list-inline-item"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/jung-ah-choi-729b06196/"> https://www.linkedin.com/in/jung-ah-choi-729b06196/</a></li>  
+	                </ul>
             </div><!--//profile-->
            <!--  <a class="btn btn-cta-primary float-right" href="#" target="_blank"><i class="fas fa-paper-plane"></i>Contact Me</a>       -->        
         </div><!--//container-->
